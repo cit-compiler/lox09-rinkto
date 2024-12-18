@@ -4,7 +4,7 @@ breakfast ::= bread
 
 protein   ::= crispiness "crispy" "bacon"
 protein   ::= "sausage"
-protein    → cooked "eggs"
+protein   ::= cooked "eggs"
 
 crispiness ::= "really"
 crispiness ::= "really" crispiness
