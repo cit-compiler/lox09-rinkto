@@ -17,24 +17,3 @@ bread      ::= "toast"
 bread      ::= "biscuits"
 bread      ::= "English muffin"
 
-breakfast ::= protein ( "with" breakfast "on the side" )?
-          | bread
-
-protein   ::= "really"+ "crispy" "bacon"
-          | "sausage"
-          | ( "scrambled" | "poached" | "fried" ) "eggs"
-
-bread     ::= "toast" | "biscuits" | "English muffin"
-
-expression     ::= literal
-               | unary
-               | binary
-               | grouping
-
-literal        ::= NUMBER | STRING | "true" | "false" | "nil"
-grouping       ::= "(" expression ")"
-unary          ::= ( "-" | "!" ) expression
-binary         ::= expression operator expression
-operator       ::= "==" | "!=" | "<" | "<=" | ">" | ">="
-               | "+"  | "-"  | "*" | "/"
-               
